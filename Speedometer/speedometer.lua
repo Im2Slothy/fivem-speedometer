@@ -1,4 +1,4 @@
--- HELP BY FRIEND FOR VALUES OF SPEED
+-- Speed Values
 --[[ 
 local mph = 2.2369
 local kph = 3.6 
@@ -13,7 +13,7 @@ function text(content)
     DrawText(0.8,0.9)
 end
 Citizen.CreateThread(function()
--- Little bit of help but it makes it so it only shows speed when in vehicle. 
+-- Speed only shows while in vehicle
     while true do
         Citizen.Wait(1)
         local speed = (GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*2.2369)
